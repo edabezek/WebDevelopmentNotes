@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;}
+        
+        
+        #showcase{
+            background-color: aqua;
+            padding: 50px;
+        
+        }
+        #how-it-works{
+            background-color: blue;
+            
+            padding-left: 100px;/*içerik sağa kayar zemin değil,çünkü içerikle köşe arasındaki boşluğu padding ile temsil ediyor*/
+            /*margin-left: 100px;    burada zemin sağa kayar*/
+            
+        }
+        h1{padding: 20px ; background-color: brown;} 
+        nav {padding: 20px ; background-color: chartreuse;}
+
+        a{padding-left: 10px ;}
+    </style>
+</head>
+<body>
+   <nav>
+       <a href="#">Home</a>
+       <a href="#">Movies</a>
+       <a href="#">Contact</a>
+   </nav>
+    <main>
+        <section id="showcase">
+            <h1>Welcome Movie App</h1>
+        </section>
+        <section id="how-it-works">
+            <h2>How it works?</h2>
+        </section>
+    </main>
+</body>
+</html>
