@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card-header">
+        <h3 class="card-title" id="title">Todo App</h3>
+    </div>
+    <ul id="task-list">
+        <li class="task">Görev 1</li>
+        <li class="task">Görev 2</li>
+        <li class="task">Görev 3</li>
+        <li class="task">Görev 4</li>
+    </ul>
+
+    <script>
+        let sonuc;
+
+        sonuc=document.getElementsByClassName("task")[0];
+        //console.log(sonuc);
+
+        taskList=document.getElementsByClassName("task");
+        
+        for (let i = 0; i < taskList.length; i++) {
+            console.log(taskList[i]);
+            
+        }
+        //kısa yöntem of : liste içindeki element , in : index
+        for(let task of taskList){
+            console.log(task);
+        }
+        
+        for(let task of taskList){
+            task.style.color="red"
+            task.style.fontsize="20px";
+            //task.innerText="Item"
+        }
+
+        //grup altındaki elemanları alır
+        taskList=document.querySelectorAll("#task-list li")
+        
+    </script>
+    
+</body>
+</html>

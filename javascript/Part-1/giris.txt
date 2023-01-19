@@ -1,0 +1,13 @@
+JavaScript 
+
+--frontend =>tarayıcı tarafında kullanılır,tarayıcı derler-tarayıcıda node var gibi düşünebiliriz.
+
+
+--backend => node.js platformu üstünde çalıştırmak gerekiyor,derleyici node.js aracı ile yorumlanacak,bu yorumlama uygulamanın çalıştığı pc de olur
+    javascript doğrudan database e talep gönderemez,gönderebilmek için backend programlama diline ihtiyacımız var yada hazır servis ile çekebiliriz
+
+    js => service => db 
+
+    Not: Firebase , servis işlemini gören , javascript ile db den veri almamızı sağlayan yapıdır(backend dili kullanmadan)
+
+-kodları tarayıcıda çalıştıracağım.

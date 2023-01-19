@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card-header">
+        <h3 class="card-title" id="title">Todo App</h3>
+    </div>
+    <ul>
+        <li>
+            Görev 1
+        </li>
+        <li>
+            Görev 2
+        </li>
+        <li>
+            Görev 3
+        </li>
+        <li>
+            Görev 4
+        </li>
+    </ul>
+
+    <script>
+        let sonuc;
+
+        sonuc=document.getElementById("title");
+        sonuc=document.getElementById("title").id;
+        sonuc=document.getElementById("title").className;
+        sonuc=document.getElementById("title").classList;
+
+        document.getElementById("title").style.fontSize="30px";
+        document.getElementById("title").style.color="blue";
+        //document.getElementById("title").style.display="none";
+        document.getElementById("title").innerText="Todo APP";//etiket bilgisini almaz 
+        document.getElementById("title").innerHTML="<p>Todo APP 2</p>";//etiket bilgisini alır
+
+        //id ye göre seçim yapmak için # veriyoruz,sayfadaki id si title olan elemanı seçer
+        sonuc=document.querySelector("#title");
+
+        //classı card-header olan elemente ulaşmak için
+        sonuc=document.querySelector(".card-header");
+
+        //sayfada bulduğu ilk div elementi getirir.
+        sonuc=document.querySelector("div");
+
+        sonuc=document.querySelector("li");
+        sonuc=document.querySelector("li:first-child");
+        sonuc=document.querySelector("li:last-child");
+        sonuc=document.querySelector("li:nth-child(2)");
+        
+
+
+
+
+        console.log(sonuc);
+    </script>
+    
+</body>
+</html>
